@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: fantasy
+}
+
+body{
+    overflow-x: hidden;
+    word-spacing: 2px;
+}
+
+.main-bg {
+    background: url('images/justin-lim-tloFnD-7EpI-unsplash.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.badge{
+    width: 4rem;
+    height: 6rem;
+    clip-path: polygon(0% 0%, 100% 0, 100% 70%, 50% 100%, 0 70%);
+    background-color: rgb(45, 45, 45);
+    z-index: 100;
+}
+
+.container {
+    width: 50rem;
+    height: 50rem;
+    background-color: white;
+    opacity: 0.9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 7px;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+}
+
+.head-txt {
+    text-align: center;
+    margin-top: 2.2rem;
+    font-size: 80px;
+}
+
+ul {
+    list-style-type: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ul li {
+    margin: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 40px;
+    color: black;
+}
+
+.still{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: 55rem;
+    height: 55rem;
+    background-color: tomato;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.main-msg{
+    margin: 10rem 0 4rem;
+    font-size: 45px;
+}
+
+.board{
+    background-color: whitesmoke;
+    margin: 3rem 15rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.input{
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 4rem;
+    width: 8rem;
+    margin: 4rem;
+    font-family: fantasy;
+    font-size: 30px;
+    text-align: center;
+}
+
+.score{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.score-bar{
+    position: relative;
+    width: 600px;
+    height: 3rem;
+    background-color: whitesmoke;
+    color: black;
+    margin: 3rem 8.5rem;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.score-bar::before{
+    content: attr(data-label);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+    bottom: 00.5rem;
+    width: calc(data-label * 1%);
+    min-width: 0.5rem;
+    max-width: calc(100% - 1em);
+    background-color: green;
+    border-radius: 3px;
+    padding: 1rem;
+}
+
+.add {
+    width: 300px;
+    height: 150px;
+    border-radius: 30px;
+    background-color: tomato;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub {
+    width: 300px;
+    height: 150px;
+    border-radius: 30px;
+    background-color: gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mult {
+    width: 300px;
+    height: 150px;
+    border-radius: 30px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.incorrect {
+    color: red;
+}
+
+.footer {
+    background-color: rgb(45, 45, 45);
+    color: white;
+    text-align: center;
+    padding: 1.3rem;
+    bottom: 0;
+    width: 100%;
+}
+
+.add-footer{
+    position: fixed;
+    background-color: aqua;
+}
